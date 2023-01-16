@@ -1,0 +1,56 @@
+
+     
+    body {
+        margin: 0;
+        padding: 0;
+      }
+       
+      :root{
+        --Paars:#BA84EA;
+        --Lichtpaars:#FBFBFB;/*achtergrond homepage&footer*/
+        --Wit:#FFFFFF;
+        --Grijs:#5A5A5A;
+        --Lichtgrijs:#E9E9E9;/*voor borders*/
+        --Donkergrijs :#5A5A5A;/*footer onderste deel*/
+      }
+       
+      h1{
+    
+        font-family: "Comfortaa";
+      }
+       
+      h2{
+      
+        font-family: "Comfortaa";
+      }
+       
+      h3{
+    
+        font-family: "Poppins";
+        color: var(--Paars);
+      }
+       
+      h4{
+    
+        font-family: "Covered by your grace";
+      }
+       
+      p{
+        font-size: 17px;
+        font-family: "Poppins";
+        margin:0;
+      }
+       
+      button{
+        background-color: var(--Paars);
+        border: none;
+        border-radius: 10px;
+        padding: 8px 16px;
+        margin-top: 20px;
+        color: var(--Wit);
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: lighter;
+      }
+      
+  

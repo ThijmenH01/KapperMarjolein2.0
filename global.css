@@ -1,0 +1,242 @@
+#wrapper{
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --Paars:#BA84EA;
+  --Lichtpaars:#FBFBFB;/*achtergrond homepage&footer*/
+  --Wit:#FFFFFF;
+  --Grijs:#5A5A5A;
+  --Lichtgrijs:#E9E9E9;/*voor borders*/
+  --Donkergrijs :#5A5A5A;/*footer onderste deel*/
+}
+
+h1{
+  font-size: 80px;
+  font-family: "Comfortaa";
+  margin:0;
+}
+
+h2{
+  font-size: 60px;
+  font-family: "Comfortaa";
+  color: var(--Paars);
+}
+
+h3{
+  font-size: 25px;
+  font-family: "Poppins";
+  color: var(--Paars);
+}
+
+h4{
+  font-size: 30px;
+  font-family: "Covered by your grace";
+
+}
+
+h5{
+  font-size: 18px;
+  font-family: "Poppins";
+  color: var(--Paars);
+}
+
+
+p{
+  font-size: 20px;
+  font-family: "Poppins";
+  margin:0;
+}
+
+li{
+  font-size: 20px;
+  font-family: "Poppins";
+  margin:0;
+}
+
+button{
+  background-color: var(--Paars);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  color: var(--Wit);
+  font-family: Poppins;
+  font-size: 20px;
+  width:fit-content;
+  height: fit-content;
+  transition: .3s;
+}
+
+button:hover{
+  opacity: .5;
+  transition: .3s;
+}
+
+
+/* hide scrollbar to prevent weird shifting */
+body::-webkit-scrollbar{
+display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+/* responsive tekst ipad*/
+    @media (max-width: 767px){
+      h1{
+        font-size: 60px;
+        font-family: "Comfortaa";
+        margin:0;
+      }
+      
+      h2{
+        font-size: 50px;
+        font-family: "Comfortaa";
+        color: var(--Paars);
+      }
+      
+      h3{
+        font-size: 30px;
+        font-family: "Poppins";
+        color: var(--Paars);
+      }
+      
+      h4{
+        font-size: 30px;
+        font-family: "Covered by your grace";
+      
+      }
+      
+      h5{
+        font-size: 18px;
+        font-family: "Poppins";
+        color: var(--Paars);
+      }
+      
+      
+      p{
+        font-size: 18px;
+        font-family: "Poppins";
+        margin:0;
+      }
+      
+      
+      }  
+    
+      
+   
+/* responsive tekst telefoon*/
+    @media (max-width: 480px){
+      h1{
+        font-size: 48px;
+        font-family: "Comfortaa";
+        margin:0;
+      }
+      
+      h2{
+        font-size: 38px;
+        font-family: "Comfortaa";
+        color: var(--Paars);
+      }
+      
+      h3{
+        font-size: 20px;
+        font-family: "Poppins";
+        color: var(--Paars);
+      }
+      
+      h4{
+        font-size: 25px;
+        font-family: "Covered by your grace";
+      
+      }
+      
+      h5{
+        font-size: 18px;
+        font-family: "Poppins";
+        color: var(--Paars);
+      }
+      
+      
+      p{
+        font-size: 18px;
+        font-family: "Poppins";
+        margin:0;
+      }
+      /* responsive gap homepage tijden */
+      .tijden {
+        gap: 45px;
+      
+      }
+      /* responsive boxes homepage */
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        
+        width: 90%;
+       
+        
+       
+      }
+      
+      }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* old */
+/* h1{
+  font-size: 115px;
+  font-family: "Comfortaa";
+}
+
+h2{
+  font-size: 100px;
+  font-family: "Comfortaa";
+}
+
+h3{
+  font-size: 30px;
+  font-family: "Poppins";
+  color: var(--Paars);
+}
+
+h4{
+  font-size: 40px;
+  font-family: "Covered by your grace";
+}
+
+p{
+  font-size: 25px;
+  font-family: "Poppins";
+} */
+
+
+/* 
+(het zijn alle fonts die we noodig heb)
+font-family: 'Comfortaa', cursive;
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'Poppins', sans-serif; */
+
+
+

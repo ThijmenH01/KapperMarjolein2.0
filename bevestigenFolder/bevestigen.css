@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    border: 0;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    height: 18px;
+    font: normal 200 20px Poppins;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fafafc;
+}
+
+h2 {
+    font: normal 800 50px/120% Poppins;
+}
+
+span {
+    font: normal 800 100px/120% Poppins;
+}
+
+.texth2 {
+    height: fit-content;
+    background-color: #BA84EA;
+}
+
+.bedank {
+    display: flex;
+    flex-direction: column;
+    color: #fefeff;
+    margin: auto;
+    background-color: #BA84EA;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.text-bedank {
+    position: relative;
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.text-bedank .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.text-bedank .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+@media screen and (max-width:420px) {
+    .bedank {
+        display: none;
+    }
+
+    h2 {
+        font: normal 800 30px Poppins;
+    }
+
+    button {
+        font: normal 200 15px Poppins;
+    }
+
+    #bouncyCircle {
+        display: none;
+    }
+
+    span {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:421px) {
+    .bedank-mob {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .bedank-mob {
+        display: none;
+    }
+
+    h2 {
+        font: normal 800 40px/120% Poppins;
+    }
+
+    button {
+        font: normal 100 15px Poppins;
+    }
+
+    .bedank {
+        padding: 30px 50px;
+    }
+
+    #bouncyCircle {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    .text-bedank {
+        position: relative;
+        font-weight: 900;
+    }
+
+    .bedank-mob {
+        display: none;
+    }
+
+    h2 {
+        font: normal 800 50px/120% Poppins;
+    }
+
+    button {
+        font: normal 200 20px Poppins;
+    }
+
+    .bedank {
+        padding: 100px 100px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .bedank {
+        display: none;
+    }
+
+    .bedank-mob {
+        display: flex;
+        flex-direction: column;
+        color: #BA84EA;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    button {
+        font: normal 200 15px Poppins;
+        color: #f2eafa;
+        background-color: #a977d5;
+        border-radius: 50px;
+        margin-bottom: 150px;
+    }
+
+    .texth2 {
+        height: fit-content;
+        background-color: #fdfdfd;
+    }
+
+
+}
+
+@media screen and (min-width:1400px) {
+    .bedank-mob {
+        display: none;
+    }
+
+    h2 {
+        font: normal 800 50px/120% Poppins;
+    }
+
+    button {
+        font: normal 200 25px Poppins;
+        color: #8961ac;
+    }
+}

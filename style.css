@@ -1,0 +1,55 @@
+/* START NAVBAR */
+.topnav {
+    background-color: rgb(90, 90, 90);
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color:#BA84EA;
+    color: white;
+}
+/* END NAVBAR */
+
+
+/* START BUTTONS */
+
+/* .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #BA84EA;;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #5b2788;
+}
+
+.button:hover {
+    background-color: #BA84EA;;
+}
+
+.button:active {
+    background-color: #BA84EA;;
+    box-shadow: 0 5px #572f7a;
+    transform: translateY(4px);
+} */
+
+
+/* END BUTTONS */

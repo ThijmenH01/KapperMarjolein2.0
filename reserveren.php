@@ -67,7 +67,6 @@ include("db.php");
         <form action="reserverenFolder/add.php" method="POST">
           <p>1. Kies je behandeling</p>
           <h3>Behandeling</h3>
-          <fieldset value="serviceKapper">
             <input type="radio" id="puntjes knippen" name="serviceKapper" value="Puntjes knippen" required onclick="myFunction(); calc();">
             <label class="labelforbutton" for="puntjes knippen">
               <div>Puntjes knippen</div>
@@ -100,9 +99,7 @@ include("db.php");
                 <div>25 eur</div>
               </div>
             </label><br>
-          </fieldset>
 
-          <fieldset value="servicescategorie">
             <h3>Extra</h3>
             <input type="radio" id="wassen" name="servicescategorie" value="7" required onclick="myFunction(); calc();">
             <label class="labelforbutton" for="wassen">
@@ -137,7 +134,7 @@ include("db.php");
                 <div></div>
               </div>
             </label><br><br>
-          </fieldset>
+
 
           <p>2. Kies een moment</p>
           <label for="afspraakdatum">

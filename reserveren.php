@@ -15,7 +15,17 @@
 </head>
 <body>
 <?php
-
+  $email = $emailErr ="";
+  // if (empty($_POST["email"])) {
+  //   $emailErr = "电邮是必填的";
+  // } else {
+  //   $email = test_input($_POST["email"]);
+    // 检查电子邮件地址语法是否有效
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Voer het juiste e-mailadres in"; 
+    } else {
+      $emailErr = "goed";
+     }
   function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -174,7 +184,7 @@
         <h5>Email</h5>
         <label for="email"><i class="fa fa-envelope"></i></label>
         <input type="text" id="email" name="email" placeholder="john@example.com" required>
-
+        <span class="error">* <?php echo $emailErr;?></span>
 
         <h5>Telefoon nummer</h5>
         <label for="phone"> <i class="fa-solid fa-phone"></i></label>

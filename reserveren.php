@@ -15,17 +15,7 @@
 </head>
 <body>
 <?php
-  $email = $emailErr ="";
-  // if (empty($_POST["email"])) {
-  //   $emailErr = "电邮是必填的";
-  // } else {
-  //   $email = test_input($_POST["email"]);
-    // 检查电子邮件地址语法是否有效
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Voer het juiste e-mailadres in"; 
-    } else {
-      $emailErr = "goed";
-     }
+
   function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -82,10 +72,10 @@
 <div>  
   
       <!-- <form action="./get.php" method="post"> -->
-       <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+      <form action="add.php" method="POST">
         <p>1. Kies je behandeling</p>
         <h3>Behandeling</h3>
-        <input class="datatime" type="radio" id="puntjes knippen" name="keuzebehandeling" value="Puntjes knippen,30,10" required onclick="myFunction(); calc();">
+        <input class="datatime" type="radio" id="puntjes knippen" name="serviceKapper" value="Puntjes knippen,30,10" required onclick="myFunction(); calc();">
         <label class="labelforbutton" for="puntjes knippen">
           <div>Puntjes knippen</div>
           <div class="infoforbutton">
@@ -93,7 +83,7 @@
             <div>10 eur</div>
           </div>
         </label><br>
-        <input class="datatime" type="radio" id="kort haar" name="keuzebehandeling" value="Kort haar,30,15" onclick="myFunction(); calc();">
+        <input class="datatime" type="radio" id="kort haar" name="serviceKapper" value="Kort haar,30,15" onclick="myFunction(); calc();">
         <label class="labelforbutton" for="kort haar">
           <div>Kort haar</div>
           <div class="infoforbutton">
@@ -101,7 +91,7 @@
             <div>15 eur</div>
           </div>
         </label><br>
-        <input class="datatime" type="radio" id="haar tot schouders" name="keuzebehandeling" value="Haar tot schouders,30,20" onclick="myFunction(); calc();">
+        <input class="datatime" type="radio" id="haar tot schouders" name="serviceKapper" value="Haar tot schouders,30,20" onclick="myFunction(); calc();">
         <label class="labelforbutton" for="haar tot schouders">
           <div>Haar tot schouders</div>
           <div class="infoforbutton">
@@ -109,7 +99,7 @@
             <div>20 eur</div>
           </div>
         </label><br>
-        <input class="datatime" type="radio" id="lang haar" name="keuzebehandeling" value="Lang haar,30,25" onclick="myFunction(); calc();">
+        <input class="datatime" type="radio" id="lang haar" name="serviceKapper" value="Lang haar,30,25" onclick="myFunction(); calc();">
         <label class="labelforbutton" for="lang haar">
           <div>Lang haar</div>
           <div class="infoforbutton">
@@ -121,7 +111,7 @@
      
       
         <h3>Extra</h3>
-        <input class="datatime" type="radio" id="wassen" name="keuzefinish" value="Wassen,15,10" required onclick="myFunction(); calc();">
+        <input class="datatime" type="radio" id="wassen" name="servicescategorie" value="Wassen,15,10" required onclick="myFunction(); calc();">
         <label class="labelforbutton" for="wassen">
           <div>Wassen</div>
           <div class="infoforbutton">
@@ -131,7 +121,7 @@
         </label><br>
 
 
-        <input class="datatime" type="radio" id="föhnen" name="keuzefinish" value="Föhnen,15,10" required onclick="myFunction(); calc();">
+        <input class="datatime" type="radio" id="föhnen" name="servicescategorie" value="Föhnen,15,10" required onclick="myFunction(); calc();">
         <label class="labelforbutton" for="föhnen">
           <div>Föhnen</div>
           <div class="infoforbutton">
@@ -142,7 +132,7 @@
 
 
 
-        <input class="datatime" type="radio" id="wassen en föhnen" name="keuzefinish" value="Wassen en föhnen,15,20" onclick="myFunction(); calc();">
+        <input class="datatime" type="radio" id="wassen en föhnen" name="servicescategorie" value="Wassen en föhnen,15,20" onclick="myFunction(); calc();">
         <label class="labelforbutton" for="wassen en föhnen">
           <div>Wassen en föhnen</div>
           <div class="infoforbutton">
@@ -151,7 +141,7 @@
           </div>
         </label><br>
 
-        <input class="datatime" type="radio" id="geen " name="keuzefinish" value="Geen,0,0" required onclick="myFunction(); calc();">
+        <input class="datatime" type="radio" id="geen " name="servicescategorie" value="Geen,0,0" required onclick="myFunction(); calc();">
         <label class="labelforbutton" for="geen ">
           <div>Geen</div>
           <div class="infoforbutton">
@@ -179,29 +169,24 @@
         <p>3. Vul je gegevens in</p>
         <h5>Naam</h5>
         <label for="fname"><i class="fa fa-user"></i></label>
-        <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+        <input type="text" id="fname" name="naam" placeholder="John M. Doe" required>
 
         <h5>Email</h5>
         <label for="email"><i class="fa fa-envelope"></i></label>
         <input type="text" id="email" name="email" placeholder="john@example.com" required>
-        <span class="error">* <?php echo $emailErr;?></span>
+
 
         <h5>Telefoon nummer</h5>
         <label for="phone"> <i class="fa-solid fa-phone"></i></label>
-        <input type="text" id="phone" name="address" placeholder="06 12345678" required>
+        <input type="text" id="phone" name="telefoon" placeholder="06 12345678" required>
 
-        <h5>Wil je graag 24 uur van tevoren een reminder ontvangen van de afspraak?</h5>
-          <input type="radio" id="via mail" name="keuzereminder" value="Via mail,0,0" onclick="myFunction()">
-          <label class="labelforbuttonshort" for="via mail">Ja, via mail</label><br>
-          <input type="radio" id="via sms" name="keuzereminder" value="Via SMS,0,0" onclick="myFunction()">
-          <label class="labelforbuttonshort" for="via sms">Ja, via SMS</label><br>
-        <input type="radio" id="nee" name="keuzereminder" value="Nee,0,0" onclick="myFunction()">
-        <label class="labelforbuttonshort" for="nee">Nee, bedankt</label><br><br>
+      
 
         <h5>Opmerkingen</h5>
-        <textarea id="note" name="opmerkingen" placeholder="Kan ik mijn hond meenemen?" rows="4" cols="35"></textarea><br>
+        <textarea id="note" name="notities" placeholder="Kan ik mijn hond meenemen?" rows="4" cols="35"></textarea><br>
 
-        <input type="submit" id="submit" value="Bevestigen"><br><br>
+        <input type="submit" id="submit" name="submit" value="submit"><br><br>
+
 
       </form>
 </div>   

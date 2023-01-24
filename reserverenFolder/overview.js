@@ -63,7 +63,7 @@ function infoButtonListener() {
     },
     body: JSON.stringify(info),
   };
-  fetch('BeitestTime.php', infotime)
+  fetch('updateTijd.php', infotime)
     .then(response => {
       //https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Using_promises
       response.json().then(beschikbaarTijdlist => {

@@ -1,0 +1,141 @@
+.reserveringspage{
+margin-top: 100px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 40px;
+}
+
+#submit{
+  background-color: #FFA500;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  color: var(--Wit);
+  font-family: Poppins;
+  font-size: 20px;
+  width:fit-content;
+  height: fit-content;
+  transition: .3s;
+}
+
+#buttondatum{
+  background-color: var(--Paars);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  color: var(--Wit);
+  font-family: Poppins;
+  font-size: 20px;
+  width:fit-content;
+  height: fit-content;
+  transition: .3s;
+}
+
+/* hoveranimaties */
+
+#buttondatum:hover, #submit:hover{
+  opacity: .5;
+  transition: .3s;
+}
+
+input[type="text"]{
+  font-size: 20px;
+  font-family: "Poppins";
+  margin:0;
+  border: 2px solid var(--Lichtgrijs);
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+textarea{
+  font-size: 20px;
+  font-family: "Poppins";
+  margin:0;
+  border: 2px solid var(--Lichtgrijs);
+  border-radius: 5px;
+  padding: 8px 16px;
+  display: flex;
+}
+
+
+input[type="radio"]{
+  display: none;
+}
+
+label{
+  font-size: 20px;
+  font-family: "Poppins";
+  margin:0;
+}
+
+
+.labelforbutton{
+  border: 2px solid var(--Lichtgrijs);
+  border-radius: 5px;
+  padding: 8px 16px;
+  display:flex;
+  justify-content:space-between;
+}
+
+
+.labelforbuttonshort{
+  border: 2px solid var(--Lichtgrijs);
+  border-radius: 5px;
+  padding: 8px 16px;
+  display:flex;
+  justify-content:space-between;
+  width: fit-content;
+}
+
+
+.infoforbutton{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 4vw;
+}
+
+input[type="radio"]:checked + label{
+  background-color: var(--Paars);
+  color: var(--Wit);
+  border: 2px solid var(--Paars);
+}
+
+.overview{
+  position: fixed;
+  top: 120px;
+  left: 60vw;
+}
+
+.firstbox{
+  border: 2px solid var(--Lichtgrijs);
+  border-radius: 10px;
+  padding: 16px;
+  min-width: 30vw;
+  min-height: 30vw;
+}
+
+.secondbox{
+  border: 2px solid var(--Lichtgrijs);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  min-width: 30vw;
+}
+
+.tijdendisplay{
+display: flex;
+flex-wrap: wrap;
+}
+
+@media (max-width: 999px){
+  .reserveringspage{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+    .overview{
+      display: none;
+    }
+}

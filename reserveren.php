@@ -14,6 +14,7 @@
   <title>Afspraak maken</title>
 </head>
 <body>
+
 <?php
 
   function test_input($data) {
@@ -226,4 +227,5 @@
 
 </body>
 <script src="overview.js"></script>
+<script src="header.js"></script>
 </html>

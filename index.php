@@ -203,25 +203,29 @@
 
             </div>
 
-            <div class="handigelinks">
-                <h3>Handige linkjes</h3>
+           
+        <div class="handigelinks">
+            <h3>Handige linkjes</h3>
 
-                <div class="links">
-                    <a href="">>Contact</a>
-                    <a href="">>Afspraak</a>
-                    <a href="">>Vavatures</a>
-                </div>
+            <div class="links">
+                <a href="http://kappermarjolein.open-ict.hu.nl/contact">>Contact</a>
+                <a href="http://kappermarjolein.open-ict.hu.nl/reserveren">>Afspraak</a>
             </div>
 
-            <div class="info">
-                <h3>Contactgegevens</h3>
-                <div class="links">
+  
 
-                    <a href="">>Heidelberglaan 15, 3584 CS Utrecht</a>
-                    <a href="">>info@marjoleindekapper.nl</a>
-                    <a href="">>Contact</a>
-                </div>
+        </div>
+
+        <div class="info">
+            <h3>Contactgegevens</h3>
+            <div class="links">
+
+                <a href="https://www.google.com/maps/place/Hogeschool+Utrecht,+Heidelberglaan+15,+3584+CS+Utrecht/data=!4m2!3m1!1s0x47c6693e9a2d0c9f:0xa9867c6558813da4?sa=X&ved=2ahUKEwjJt63tzOX8AhUDh_0HHSgeCK0Q8gF6BAgIEAI">>Heidelberglaan 15, 3584 CS Utrecht</a>
+                <a href="mailto:info@marjoleindekapper.nl">>info@marjoleindekapper.nl</a>
+                <a href="http://kappermarjolein.open-ict.hu.nl/contact">>Contact</a> 
+    
             </div>
+        </div>
 
 
 

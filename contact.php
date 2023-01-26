@@ -94,7 +94,11 @@
             <h3>Ook komen werken?</h3>
             <p>Heb jij ervaring met hairstyling en verven? Kom het team versterken!</p>
           </div>
-          <button>Vacatures</button><br>
+          <p>Stuur een email naar  <a href="mailto:info@marjoleindekapper.nl">info@marjoleindekapper.nl</a>
+ </p>
+
+         
+<br>
 
         </div>
 

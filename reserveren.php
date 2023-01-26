@@ -184,7 +184,7 @@
         <h5>Opmerkingen</h5>
         <textarea id="note" name="notities" placeholder="Kan ik mijn hond meenemen?" rows="4" cols="35"></textarea><br>
 
-        <input type="submit" id="submit" name="submit" value="submit"><br><br>
+        <input type="submit" id="submit" name="submit" value="Bevestigen"><br><br>
 
 
       </form>

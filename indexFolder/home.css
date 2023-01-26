@@ -10,13 +10,13 @@ h6 {
 
 
 h3 {
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h4 {
   font-size: 30px;
   font-weight: lighter;
-
 }
 
 .pagina1 {
@@ -151,7 +151,6 @@ hr {
   border: none;
 
 }
-
 
 .pagina4 {
   background-color: #fbfbfb;

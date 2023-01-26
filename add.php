@@ -1,32 +1,58 @@
 <?php
 session_start();
 include("db.php");
-include("function.php");
+
 
 $naam = $_POST['naam'];
 $email = $_POST['email'];
 $telefoon = $_POST['telefoon'];
 $notites = $_POST['notities'];
 $afspraakdatum = $_POST['afspraakdatum'];
+$afspraaktijd = $_POST['afspraaktijd'];
 $serviceKapper = $_POST['serviceKapper'];
 $servicescategorie = $_POST['servicescategorie'];
+// $serviceKapperid = 0;
+// $medewerker_id  = 1;
+
 
 $_SESSION['naam'] = $naam;
 $_SESSION['email'] = $email;
 $_SESSION['afspraakdatum'] = $afspraakdatum;
 
 
+$stmt = $conn->prepare("SELECT * FROM `services` 
+INNER JOIN `servicescategorie` ON servicescategorie_id = servicescategorie");
+$stmt->execute();
+$result = $stmt->fetch(PDO::FETCH_ASSOC);
+$serviceduur = $result['serviceduur'];
+$categorieduur = $result['categorieduur'];
+
+$afspraakdatumtijd = $afspraakdatum . " " . $afspraaktijd;
+$duur =  $serviceduur + $categorieduur;
+
+
+$afspraakdatumeindtijd = date('Y-m-d H:i:s', strtotime($afspraakdatumtijd . ' + ' . $duur . ' minutes'));
+
+
+
 
 
 if (isset($_POST['submit'])) {
+    $sql = "SELECT * FROM `afspraken` WHERE `datum` = '$afspraakdatumtijd'";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
     $sql = "INSERT INTO `klanten`(`naam`, `email`, `telefoon`, `notities`) 
     VALUES ('$naam', '$email', '$telefoon', '$notites')";
     $conn->exec($sql);
 
     $klanten_id = $conn->lastInsertId();
 
-    $sql = "INSERT INTO `afspraken`(`klanten_id`, `datum`) 
-    VALUES ('$klanten_id', '$afspraakdatum')";
+    // inser into afspraken
+    $sql = "INSERT INTO `afspraken`(`klanten_id`, `datum` , `afspraakeinde`) 
+    VALUES ('$klanten_id', '$afspraakdatumtijd', '$afspraakdatumeindtijd')";
     $conn->exec($sql);
 
     $afspraak_id = $conn->lastInsertId();
@@ -58,7 +84,8 @@ if (isset($_POST['submit'])) {
 
     print("<br>");
     print("<br>");
-    print_r($serviceKapper);
-    header("location:mailer.php");
-    exit();
-}
+    echo "Uw afspraak is gemaakt";
+
+    header("Location:index.php");
+    
+} 

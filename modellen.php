@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
+
     <link rel="stylesheet" href="modellenFolder/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="global.css">
     <script defer src="modellenFolder/modellen.js"></script>
@@ -67,33 +67,50 @@
 
 
         <div class="container">
-
+         
             <img class="foto1" id="myImg1" src="modellenFolder/fotos/model1.png" alt="">
+            <div class="text1">Fade</div>
+
             <img class="foto1" id="myImg2" src="modellenFolder/fotos/model2.jpg" alt="">
+            <div class="text1">Hello World</div>
             <img class="foto1" id="myImg3" src="modellenFolder/fotos/model3.jpg" alt="">
+            <div class="text1">Krullen</div>
             <img class="foto1" id="myImg4" src="modellenFolder/fotos/model4.jpg" alt="">
+            <div class="text1">Fade en trimmen</div>
             <img class="foto1" id="myImg5" src="modellenFolder/fotos/model6.jpg" alt="">
+            <div class="text1">Boblijn</div>
             <img class="foto1" id="myImg6" src="modellenFolder/fotos/model7.jpg" alt="">
+            <div class="text1">Geverfd blond</div>
             <img class="foto1" id="myImg7" src="modellenFolder/fotos/model9.jpg" alt="">
+            <div class="text1">Heren lang</div>
             <img class="foto1" id="myImg8" src="modellenFolder/fotos/model10.jpg" alt="">
+            <div class="text1">gestyled</div>
             <img class="foto1" id="myImg9" src="modellenFolder/fotos/model12.jpg" alt="">
-            <img class="foto1" id="myImg10" src="modellenFolder/fotos/model13.jpg" alt="">
-
+            <div class="text1">Fade</div>
+     
 
 
         </div>
         </div>
 
-        <div id="myModal" class="modal">
+        <div id="myModal" class="modal" >
 
 
             <span class="close">&times;</span>
             <img class="modal-content" id="img01">
-            <div class="caption">hallo</div>
-
+        
+         
         </div>
 
 
+
+
+
+
+</div>
+
+
+<label id="dark-change"></label>
 
     </section>
 
@@ -109,23 +126,24 @@
             <h3>Handige linkjes</h3>
 
             <div class="links">
-                <a href="">>Contact</a>
-                <a href="">>Afspraak</a>
-                <a href="">>Vacatures</a>
+                <a href="http://kappermarjolein.open-ict.hu.nl/contact">>Contact</a>
+                <a href="http://kappermarjolein.open-ict.hu.nl/reserveren">>Afspraak</a>
             </div>
+
+  
+
         </div>
 
         <div class="info">
             <h3>Contactgegevens</h3>
             <div class="links">
 
-                <a href="">>Heidelberglaan 15, 3584 CS Utrecht</a>
-                <a href="">>info@marjoleindekapper.nl</a>
-                <a href="">>Contact</a>
+                <a href="https://www.google.com/maps/place/Hogeschool+Utrecht,+Heidelberglaan+15,+3584+CS+Utrecht/data=!4m2!3m1!1s0x47c6693e9a2d0c9f:0xa9867c6558813da4?sa=X&ved=2ahUKEwjJt63tzOX8AhUDh_0HHSgeCK0Q8gF6BAgIEAI">>Heidelberglaan 15, 3584 CS Utrecht</a>
+                <a href="mailto:info@marjoleindekapper.nl">>info@marjoleindekapper.nl</a>
+                <a href="http://kappermarjolein.open-ict.hu.nl/contact">>Contact</a> 
+    
             </div>
         </div>
-
-
 
     </section>
 

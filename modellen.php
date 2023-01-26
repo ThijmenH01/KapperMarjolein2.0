@@ -27,16 +27,14 @@
         <div id="wrapper">
 
             <div class="topnav" id="mytopnav">
-                <ul>
-                    <p style="color: var(--Paars)">Marjolein de Kapper</p>
-                    <li><a href="http://kappermarjolein.open-ict.hu.nl/">Home</a></li>
-                    <li><a href="http://kappermarjolein.open-ict.hu.nl/modellen">Modellen</a></li>
-                    <li><a href="http://kappermarjolein.open-ict.hu.nl/contact">Contact</a></li>
-                    <a href="http://kappermarjolein.open-ict.hu.nl/reserveren">
-                        <li><button>Afspraak maken</button></li>
-                    </a>
-                    <a><i onclick="Dropdown()" class="fa-solid fa-bars fa-2x"></i></a>
-                </ul>
+            <ul>
+            <p style="color: var(--Paars)">Marjolein de Kapper</p>
+            <li><a href="http://kappermarjolein.open-ict.hu.nl/">Home</a></li>
+            <li><a href="http://kappermarjolein.open-ict.hu.nl/modellen">Modellen</a></li>
+            <li><a href="http://kappermarjolein.open-ict.hu.nl/contact">Contact</a></li>
+            <li><a href="http://kappermarjolein.open-ict.hu.nl/reserveren">Afspraak maken</a></li>
+            <a><i onclick="Dropdown()" class="fa-solid fa-bars fa-2x"></i></a>
+            </ul>
             </div>
         </div>
     </div>

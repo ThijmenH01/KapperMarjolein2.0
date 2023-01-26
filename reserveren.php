@@ -37,9 +37,7 @@
             <li><a href="http://kappermarjolein.open-ict.hu.nl/">Home</a></li>
             <li><a href="http://kappermarjolein.open-ict.hu.nl/modellen">Modellen</a></li>
             <li><a href="http://kappermarjolein.open-ict.hu.nl/contact">Contact</a></li>
-            <a href="http://kappermarjolein.open-ict.hu.nl/reserveren">
-                <li><button>Afspraak maken</button></li>
-            </a>
+            <li><a href="http://kappermarjolein.open-ict.hu.nl/reserveren">Afspraak maken</a></li>
             <a><i onclick="Dropdown()" class="fa-solid fa-bars fa-2x"></i></a>
         </ul>
     </div>
